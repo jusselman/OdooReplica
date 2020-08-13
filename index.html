@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="odoo.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Odoo</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container-left">
+            <a href="#" class="nav-menu"><i class="fas fa-th"></i></a>
+            <a href="#" class="nav-logo">dd</a>
+            <a href="#" class="nav-appName">trez</a>
+        </div>
+
+        <div class="container-right">
+            <a href="#" class="nav-clock"><i class="far fa-clock"></i></a>
+            <a href="#" class="nav-chat"><i class="fas fa-comments"></i></a>
+            <a href="#" class="nav-bug"><i class="fas fa-bug"></i></a>
+            <a href="#" class="nav-tools"><i class="fas fa-tools"></i></a>
+            <a href="#" class="nav-user">
+                <img src="profile.png" />
+            </a>
+            <a class="user-name">
+                <p>Mitchell Admin (gantt)</p>
+            </a>
+            <a class="user-change">
+                &#9662;
+            </a>
+        </div>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <!-- logo -->
+        <div class="search-logo">
+            <p>trez</p>
+        </div>
+
+        <!-- searchbar -->
+        <div class="search-bar">
+            <div class="search-box">
+                <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+                <a href="#" class="searchTag">g1</a>
+                <a href="#" class="exit">x</a>
+            </div>
+            <input placeholder="Search..." class="input">
+            <button class="magnify"><i class="fas fa-search-minus"></i></button>
+        </div>
+
+        <!-- Dates -->
+        <div class="search-dates">
+            <button class="add">ADD</button>
+            <button class="left"><i class="fas fa-arrow-left"></i></button>
+            <button class="today">TODAY</button>
+            <button class="right"><i class="fas fa-arrow-right"></i></button>
+            <button class="month">MONTH</button>
+            <button class="week">WEEK</button>
+            <button class="expand"><i class="fas fa-expand-alt"></i></button>
+            <button class="compress"><i class="fas fa-compress-alt"></i></button>
+        </div>
+
+        <!-- Filters -->
+        <div class="search-filters">
+            <div class="filter-options">
+                <a href="#"><i class="fas fa-filter"></i></a>
+                <a href="#">Filters</a>
+                <button class="btnFilter">&#9662;</button>
+                <a href="#"><i class="fas fa-bars"></i></a>
+                <a href="#">Group By</a>
+                <button class="btnFilter">&#9662;</button>
+                <a href="#"><i class="fas fa-star"></i></a>
+                <a href="#">Favorites</a>
+                <button class="btnFilter">&#9662;</button>
+            </div>
+            <div class="filter-icons">
+                <a href="#"><i class="fas fa-th-list"></i></a>
+                <a href="#"><i class="fas fa-list-ul"></i></a>
+                <a href="#"><i class="fas fa-th-large"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda Section -->
+    <section class="agenda-section">
+        <div class="agenda-header">
+            <div class="agenda-title">
+                Default gantt view for x_trez
+            </div>
+            <div class="agenda-month">
+                February 2019
+            </div>
+            <!-- Agenda D -->
+            <div class="agenda-dates">
+                <span class="agenda-date">01</span>
+                <span class="agenda-date">02</span>
+                <span class="agenda-date">03</span>
+                <span class="agenda-date">04</span>
+                <span class="agenda-date">05</span>
+                <span class="agenda-date">06</span>
+                <span class="agenda-date">07</span>
+                <span class="agenda-date">08</span>
+                <span class="agenda-date">09</span>
+                <span class="agenda-date">10</span>
+                <span class="agenda-date">12</span>
+                <span class="agenda-date">13</span>
+                <span class="agenda-date">14</span>
+                <span class="agenda-date">15</span>
+                <span class="agenda-date">16</span>
+                <span class="agenda-date">17</span>
+                <span class="agenda-date">18</span>
+                <span class="agenda-date">19</span>
+                <span class="agenda-date">20</span>
+                <span class="agenda-date">21</span>
+                <span class="agenda-date">22</span>
+                <span class="agenda-date">23</span>
+                <span class="agenda-date">24</span>
+                <span class="agenda-date">25</span>
+                <span class="agenda-date">26</span>
+                <span class="agenda-date">27</span>
+                <span class="agenda-date">28</span>
+            </div>
+        </div>
+        <div class="primary-row">
+            <div class="primary-row-header">
+                <div class="primary-cell-title">
+                    <button class="primary-toggle" onclick="toggleAgenda()" id="btn-toggle">-</button>
+                    Primary
+                </div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="primary-cell"></div>
+                <div class="bars1">
+                    <div class="b-r1-1">1</div>
+                    <div class="b-r1-2">2</div>
+                    <div class="b-r1-3">1</div>
+                    <div class="b-r1-4">1</div>
+                    <div class="b-r1-5">1</div>
+                    <div class="b-r1-6">2</div>
+                    <div class="b-r1-7">3</div>
+                    <div class="b-r1-8">4</div>
+                </div>
+            </div>
+            <div id="collapsableDiv">
+                <div class="secondary-row" id="modal-btn" data-toggle="modal">
+                    <div class="secondary-column"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="secondary-cell"></div>
+                    <div class="bars1">
+                        <div class="b-r2-1" data-toggle="modal" data-target="#basicExampleModal">a</div>
+                        <div class="b-r2-2" data-toggle="modal" data-target="#basicExampleModal">b</div>
+                        <div class="b-r2-3" data-toggle="modal" data-target="#basicExampleModal">a</div>
+                        <div class="b-r2-4" data-toggle="modal" data-target="#basicExampleModal">k</div>
+                        <div class="b-r2-5" data-toggle="modal" data-target="#basicExampleModal">dmo</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p class="modal-escape" data-dismiss="modal">&times;</p>
+                            <button type="button" class="btn-plan">PLAN</button>
+                            <button type="button" class="btn-create">CREATE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="my-modal" class="modalClick">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p class="close">&times;</p>
+                        <button type="button" class="btn-plan">PLAN</button>
+                        <button type="button" class="btn-create">CREATE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src='main.js'></script>
+</body>
+
+</html>
